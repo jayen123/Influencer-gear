@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: rgb(58, 58, 58);
+    --secondary: rgb(224, 44, 109);
+    --star: rgb(251, 130, 0);
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* shared styles */
+.btn-primary {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 24px 10px 24px;
+    border-radius: 41px;
+    border: none;
+    background: var(--secondary);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    line-height: 1.5rem;
+    cursor: pointer;
+}
+
+/* header styles */
+.header {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 120px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 87px 0 50px;
+}
+
+.navbar .brand {
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.navbar .nav-items {
+    display: flex;
+    gap: 34px;
+}
+
+.nav-items .nav-item {
+    list-style: none;
+}
+
+.nav-items .nav-item .nav-links {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+/* banner section styles here */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-content {
+    max-width: 582px;
+}
+
+.banner-title {
+    color: var(--primary);
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 4.375rem;
+}
+
+.banner-desc {
+    color: var(--primary);
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0px;
+    margin: 16px 0;
+}
+
+.banner-image {
+    max-width: 440px;
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+/* Main section styles */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 120px;
+}
+
+/* sponsor section styles */
+.sponsors-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+/* media screen small devices */
+@media screen and (max-width: 576px) {
+
+    .header,
+    main {
+        padding: 0 20px;
+    }
+
+    .navbar,
+    .nav-items {
+        flex-direction: column;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 1.75rem;
+        line-height: 2.625rem;
+    }
+
+    .banner-desc {
+        font-size: 0.875rem;
+        line-height: 1.313rem;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .banner-image {
+        width: 202px;
+    }
+
+    .sponsors-container {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 30px;
+    }
+}
