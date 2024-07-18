@@ -225,6 +225,30 @@ main {
     text-decoration: none;
 }
 
+/* featured section styles */
+.featured {
+    display: flex;
+    align-items: center;
+    gap: 96px;
+    max-width: 1110px;
+    margin: 100px auto;
+}
+
+.featured .content h3 {
+    color: rgb(10, 8, 38);
+    font-size: 2.375rem;
+    font-weight: 700;
+    line-height: 3.75rem;
+}
+
+.featured .content p {
+    max-width: 501px;
+    color: rgb(108, 108, 108);
+    font-weight: 700;
+    line-height: 28px;
+    margin: 16px 0;
+}
+
 /* media screen small devices */
 @media screen and (max-width: 576px) {
 
@@ -238,7 +262,8 @@ main {
         flex-direction: column;
     }
 
-    .banner {
+    .banner ,
+    .featured{
         flex-direction: column-reverse;
     }
 
