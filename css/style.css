@@ -249,6 +249,41 @@ main {
     margin: 16px 0;
 }
 
+/* footer section styles */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(4, 14, 43);
+    padding: 50px 0;
+}
+
+footer .container {
+    text-align: center;
+    color: #FFF;
+}
+
+footer .container h3 {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+footer .container p,
+span {
+    color: rgb(217, 219, 225);
+    font-family: Manrope;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 24px;
+}
+footer .container div{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+}
 /* media screen small devices */
 @media screen and (max-width: 576px) {
 
@@ -262,8 +297,8 @@ main {
         flex-direction: column;
     }
 
-    .banner ,
-    .featured{
+    .banner,
+    .featured {
         flex-direction: column-reverse;
     }
 
