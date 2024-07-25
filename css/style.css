@@ -70,6 +70,10 @@
     line-height: 1.5rem;
 }
 
+.phone-menu {
+    display: none;
+}
+
 /* banner section styles here */
 .banner {
     display: flex;
@@ -278,12 +282,14 @@ span {
     font-weight: 700;
     line-height: 24px;
 }
-footer .container div{
+
+footer .container div {
     display: flex;
     justify-content: center;
     gap: 16px;
     margin-top: 16px;
 }
+
 /* media screen small devices */
 @media screen and (max-width: 576px) {
 
@@ -291,10 +297,12 @@ footer .container div{
     main {
         padding: 0 20px;
     }
+.navbar .nav-items {
+        display: none;
+    }
 
-    .navbar,
-    .nav-items {
-        flex-direction: column;
+    .phone-menu {
+        display: block;
     }
 
     .banner,
